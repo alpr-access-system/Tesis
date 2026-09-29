@@ -401,8 +401,12 @@ CRNN con decodificador CTC \parencite{kuyunsaDeepLearningEnhancedAutomatic2025, 
 Si bien exhibe una alta robustez ante tipografías complejas y placas deterioradas, su 
 carga computacional en entornos carentes de aceleración gráfica es crítica. Su ejecución en CPU 
 apenas alcanza 8 lecturas por minuto, mostrando niveles de confianza altamente oscilatorios 
-(promedio de 0.41) en secuencias de video real 
+(promedio de 0.41) en secuencias de video real
 \parencite{mobeenRealTimeAutomaticLicense2026, xuDeepLearningAlgorithms2026c}.
+No obstante, su acoplamiento con detectores de la familia YOLO se encuentra documentado en
+\textit{pipelines} ALPR de tiempo real, donde la placa recortada por el detector es
+transcrita por EasyOCR y su salida se restringe mediante una verificación de la sintaxis
+posicional de la patente \parencite{mobeenRealTimeAutomaticLicense2026}.
 
 \textbf{PaddleOCR}: 
 Posicionado como un pipeline de grado industrial, integra el algoritmo de binarización 
